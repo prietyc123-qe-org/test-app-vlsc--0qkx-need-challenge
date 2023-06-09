@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-b4ls
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pkumari_org/build-e2e-libq-tenant/test-app-vlsc/devfile-sample-python-basic-b4ls@sha256:1b0b3f3a72931229132d02b43dc59467f5934db2ed1b807a67aa78ab2a2010d8
+        name: my-python
+        resources: {}
+status: {}
